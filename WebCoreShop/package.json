@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "mustache": "2.3.0",
+    "twbs-pagination": "1.4.1",
+    "ckeditor": "4.7.3"
+  }
+}
