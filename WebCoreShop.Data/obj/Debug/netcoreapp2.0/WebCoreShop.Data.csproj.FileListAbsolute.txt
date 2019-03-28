@@ -22,3 +22,15 @@ D:\back-end\Core\WebCoreBanHang\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCore
 D:\back-end\Core\WebCoreBanHang\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.csproj.CopyComplete
 D:\back-end\Core\WebCoreBanHang\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.dll
 D:\back-end\Core\WebCoreBanHang\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.pdb
+D:\Github\WebsiteShopping\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.dll
+D:\Github\WebsiteShopping\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.pdb
+D:\Github\WebsiteShopping\WebCoreShop.Data\bin\Debug\netcoreapp2.0\WebCoreShop.Data.deps.json
+D:\Github\WebsiteShopping\WebCoreShop.Data\bin\Debug\netcoreapp2.0\WebCoreShop.Data.dll
+D:\Github\WebsiteShopping\WebCoreShop.Data\bin\Debug\netcoreapp2.0\WebCoreShop.Data.pdb
+D:\Github\WebsiteShopping\WebCoreShop.Data\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.dll
+D:\Github\WebsiteShopping\WebCoreShop.Data\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.pdb
+D:\Github\WebsiteShopping\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.csprojAssemblyReference.cache
+D:\Github\WebsiteShopping\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.csproj.CoreCompileInputs.cache
+D:\Github\WebsiteShopping\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.AssemblyInfoInputs.cache
+D:\Github\WebsiteShopping\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.AssemblyInfo.cs
+D:\Github\WebsiteShopping\WebCoreShop.Data\obj\Debug\netcoreapp2.0\WebCoreShop.Data.csproj.CopyComplete
