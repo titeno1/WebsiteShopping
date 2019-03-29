@@ -10446,3 +10446,844 @@ OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
 2019-03-29T17:53:01.5393048+07:00 0HLLK5T8OKTAL:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44345/favicon.ico   (ca22a1cb)
 2019-03-29T17:53:01.5396817+07:00 0HLLK5T8OKTAL:00000009 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\github\WebsiteShopping\WebCoreShop\wwwroot\favicon.ico"' (27b0a520)
 2019-03-29T17:53:01.5409264+07:00 0HLLK5T8OKTAL:00000009 [INF] Request finished in 1.8253ms 200 image/x-icon (791a596a)
+2019-03-29T23:26:30.9301703+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:26:31.3890752+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:26:31.4095277+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:26:31.4177974+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:26:31.4339131+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-03-29T23:26:31.4569626+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-03-29T23:26:31.4646785+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-03-29T23:26:31.4702532+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-03-29T23:26:31.4753695+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-03-29T23:26:31.4830791+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-03-29T23:26:31.4894616+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-03-29T23:26:31.4963253+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:26:31.5011131+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:26:31.5063528+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:26:31.7903294+07:00 0HLLKCD6QJARE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/   (ca22a1cb)
+2019-03-29T23:26:31.8311700+07:00 0HLLKCD6QJARE:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:26:31.9270793+07:00 0HLLKCD6QJARE:00000001 [INF] Executed DbCommand ("51"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2019-03-29T23:26:32.0182040+07:00 0HLLKCD6QJARE:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-03-29T23:26:32.0488787+07:00 0HLLKCD6QJARE:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-29T23:26:32.0633992+07:00 0HLLKCD6QJARE:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-03-29T23:26:32.0820729+07:00 0HLLKCD6QJARE:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-03-29T23:26:32.0851983+07:00 0HLLKCD6QJARE:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-29T23:26:32.0860980+07:00 0HLLKCD6QJARE:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:26:32.3070393+07:00 0HLLKCD6QJARE:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:26:32.3171971+07:00 0HLLKCD6QJARE:00000001 [INF] Executing action method "WebCoreShop.Controllers.HomeController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:26:36.0597231+07:00 0HLLKCD6QJARE:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-03-29T23:26:36.7576828+07:00 0HLLKCD6QJARE:00000001 [INF] Executed action "WebCoreShop.Controllers.HomeController.Index (WebCoreShop)" in 4453.4597ms (afa2e885)
+2019-03-29T23:26:36.7626706+07:00 0HLLKCD6QJARE:00000001 [INF] Request finished in 4980.7317ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:26:36.8231355+07:00 0HLLKCD6QJARE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2019-03-29T23:26:36.8264664+07:00 0HLLKCD6QJARE:00000002 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2019-03-29T23:26:36.8308790+07:00 0HLLKCD6QJARE:00000002 [INF] Request finished in 8.0585ms 304 text/css (791a596a)
+2019-03-29T23:26:36.8313982+07:00 0HLLKCD6QJARF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/css/site.css   (ca22a1cb)
+2019-03-29T23:26:36.8324661+07:00 0HLLKCD6QJARF:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\css\site.css"' (27b0a520)
+2019-03-29T23:26:36.8621979+07:00 0HLLKCD6QJARE:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/robots.txt   (ca22a1cb)
+2019-03-29T23:26:36.8762359+07:00 0HLLKCD6QJARE:00000003 [INF] Request finished in 13.9776ms 404  (791a596a)
+2019-03-29T23:26:36.8819242+07:00 0HLLKCD6QJARF:00000001 [INF] Request finished in 50.2318ms 200 text/css (791a596a)
+2019-03-29T23:26:36.9267792+07:00 0HLLKCD6QJARE:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-03-29T23:26:36.9270671+07:00 0HLLKCD6QJARE:00000004 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-03-29T23:26:36.9796262+07:00 0HLLKCD6QJARF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-03-29T23:26:36.9803290+07:00 0HLLKCD6QJARF:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2019-03-29T23:26:36.9804835+07:00 0HLLKCD6QJARG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2019-03-29T23:26:36.9810395+07:00 0HLLKCD6QJARG:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\js\site.js"' (27b0a520)
+2019-03-29T23:26:36.9911243+07:00 0HLLKCD6QJARG:00000001 [INF] Request finished in 10.5295ms 200 application/javascript (791a596a)
+2019-03-29T23:26:37.0291572+07:00 0HLLKCD6QJARE:00000004 [INF] Request finished in 102.1659ms 200 application/javascript (791a596a)
+2019-03-29T23:26:37.0430752+07:00 0HLLKCD6QJARF:00000002 [INF] Request finished in 63.0571ms 200 application/javascript (791a596a)
+2019-03-29T23:26:37.1050814+07:00 0HLLKCD6QJARG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/images/banner1.svg   (ca22a1cb)
+2019-03-29T23:26:37.1056425+07:00 0HLLKCD6QJARG:00000002 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\images\banner1.svg"' (27b0a520)
+2019-03-29T23:26:37.1160426+07:00 0HLLKCD6QJARG:00000002 [INF] Request finished in 10.4169ms 200 image/svg+xml (791a596a)
+2019-03-29T23:26:37.1226758+07:00 0HLLKCD6QJARE:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44345/images/banner2.svg   (ca22a1cb)
+2019-03-29T23:26:37.1230995+07:00 0HLLKCD6QJARE:00000005 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\images\banner2.svg"' (27b0a520)
+2019-03-29T23:26:37.1239771+07:00 0HLLKCD6QJARF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/images/banner3.svg   (ca22a1cb)
+2019-03-29T23:26:37.1241908+07:00 0HLLKCD6QJARF:00000003 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\images\banner3.svg"' (27b0a520)
+2019-03-29T23:26:37.1352121+07:00 0HLLKCD6QJARE:00000005 [INF] Request finished in 12.7586ms 200 image/svg+xml (791a596a)
+2019-03-29T23:26:37.1361141+07:00 0HLLKCD6QJARF:00000003 [INF] Request finished in 11.8537ms 200 image/svg+xml (791a596a)
+2019-03-29T23:26:37.1584222+07:00 0HLLKCD6QJARG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/images/banner4.svg   (ca22a1cb)
+2019-03-29T23:26:37.1586765+07:00 0HLLKCD6QJARG:00000003 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\images\banner4.svg"' (27b0a520)
+2019-03-29T23:26:37.1652320+07:00 0HLLKCD6QJARG:00000003 [INF] Request finished in 6.8303ms 200 image/svg+xml (791a596a)
+2019-03-29T23:26:37.3929257+07:00 0HLLKCD6QJARF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2019-03-29T23:26:37.3931672+07:00 0HLLKCD6QJARF:00000004 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2019-03-29T23:26:37.3988834+07:00 0HLLKCD6QJARF:00000004 [INF] Request finished in 5.9357ms 200 font/woff2 (791a596a)
+2019-03-29T23:30:21.6874547+07:00 0HLLKCD6QJARH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin   (ca22a1cb)
+2019-03-29T23:30:21.6886608+07:00 0HLLKCD6QJARH:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:30:21.6915656+07:00 0HLLKCD6QJARH:00000001 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.LoginController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:30:21.9665669+07:00 0HLLKCD6QJARH:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-03-29T23:30:21.9892133+07:00 0HLLKCD6QJARH:00000001 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.LoginController.Index (WebCoreShop)" in 298.1432ms (afa2e885)
+2019-03-29T23:30:21.9895547+07:00 0HLLKCD6QJARH:00000001 [INF] Request finished in 302.2738ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:30:22.0043238+07:00 0HLLKCD6QJARH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap/dist/css/bootstrap.min.css   (ca22a1cb)
+2019-03-29T23:30:22.0060535+07:00 0HLLKCD6QJARI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/font-awesome/css/font-awesome.min.css   (ca22a1cb)
+2019-03-29T23:30:22.0063383+07:00 0HLLKCD6QJARI:00000001 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.min.css"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\font-awesome\css\font-awesome.min.css"' (27b0a520)
+2019-03-29T23:30:22.0144023+07:00 0HLLKCD6QJARH:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2019-03-29T23:30:22.0152279+07:00 0HLLKCD6QJARJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-03-29T23:30:22.0152280+07:00 0HLLKCD6QJARK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/nprogress/nprogress.css   (ca22a1cb)
+2019-03-29T23:30:22.0154713+07:00 0HLLKCD6QJARJ:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-03-29T23:30:22.0155291+07:00 0HLLKCD6QJARK:00000001 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2019-03-29T23:30:22.0156254+07:00 0HLLKCD6QJARK:00000001 [INF] Request finished in 0.4712ms 304 text/css (791a596a)
+2019-03-29T23:30:22.0181239+07:00 0HLLKCD6QJARK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2019-03-29T23:30:22.0186645+07:00 0HLLKCD6QJARK:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2019-03-29T23:30:22.0190900+07:00 0HLLKCD6QJARL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-03-29T23:30:22.0196191+07:00 0HLLKCD6QJARM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/animate.css/animate.min.css   (ca22a1cb)
+2019-03-29T23:30:22.0205256+07:00 0HLLKCD6QJARL:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2019-03-29T23:30:22.0214681+07:00 0HLLKCD6QJARJ:00000001 [INF] Request finished in 6.1621ms 200 application/javascript (791a596a)
+2019-03-29T23:30:22.0232117+07:00 0HLLKCD6QJARO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-03-29T23:30:22.0232117+07:00 0HLLKCD6QJARN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/Shared/main_admin.js   (ca22a1cb)
+2019-03-29T23:30:22.0232602+07:00 0HLLKCD6QJARP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2019-03-29T23:30:22.0234810+07:00 0HLLKCD6QJARQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2019-03-29T23:30:22.0237834+07:00 0HLLKCD6QJARQ:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2019-03-29T23:30:22.0239281+07:00 0HLLKCD6QJARO:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2019-03-29T23:30:22.0242157+07:00 0HLLKCD6QJARN:00000001 [INF] Sending file. Request path: '"/app/Shared/main_admin.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\app\Shared\main_admin.js"' (27b0a520)
+2019-03-29T23:30:22.0242918+07:00 0HLLKCD6QJARP:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2019-03-29T23:30:22.0273778+07:00 0HLLKCD6QJARS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/controllers/login/index.js   (ca22a1cb)
+2019-03-29T23:30:22.0277284+07:00 0HLLKCD6QJARS:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2019-03-29T23:30:22.0290956+07:00 0HLLKCD6QJARR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2019-03-29T23:30:22.0294485+07:00 0HLLKCD6QJARR:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2019-03-29T23:30:22.0294493+07:00 0HLLKCD6QJARM:00000001 [INF] Sending file. Request path: '"/lib/animate.css/animate.min.css"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\animate.css\animate.min.css"' (27b0a520)
+2019-03-29T23:30:22.0298547+07:00 0HLLKCD6QJART:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2019-03-29T23:30:22.0301773+07:00 0HLLKCD6QJART:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2019-03-29T23:30:22.0303632+07:00 0HLLKCD6QJART:00000001 [INF] Request finished in 0.5315ms 304 text/css (791a596a)
+2019-03-29T23:30:22.0349734+07:00 0HLLKCD6QJARI:00000001 [INF] Request finished in 28.8618ms 200 text/css (791a596a)
+2019-03-29T23:30:22.0352247+07:00 0HLLKCD6QJARU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin-side/css/custom.css   (ca22a1cb)
+2019-03-29T23:30:22.0359806+07:00 0HLLKCD6QJARU:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2019-03-29T23:30:22.0362907+07:00 0HLLKCD6QJARU:00000001 [INF] Request finished in 1.057ms 304 text/css (791a596a)
+2019-03-29T23:30:22.0802549+07:00 0HLLKCD6QJARQ:00000001 [INF] Request finished in 56.6132ms 200 application/javascript (791a596a)
+2019-03-29T23:30:22.1086456+07:00 0HLLKCD6QJARK:00000002 [INF] Request finished in 90.5203ms 200 application/javascript (791a596a)
+2019-03-29T23:30:22.1561066+07:00 0HLLKCD6QJARH:00000002 [INF] Request finished in 151.7066ms 200 text/css (791a596a)
+2019-03-29T23:30:22.1573206+07:00 0HLLKCD6QJARS:00000001 [INF] Request finished in 129.9256ms 200 application/javascript (791a596a)
+2019-03-29T23:30:22.1573206+07:00 0HLLKCD6QJARL:00000001 [INF] Request finished in 138.212ms 200 application/javascript (791a596a)
+2019-03-29T23:30:22.1687832+07:00 0HLLKCD6QJARO:00000001 [INF] Request finished in 145.5189ms 200 application/javascript (791a596a)
+2019-03-29T23:30:22.1728017+07:00 0HLLKCD6QJARP:00000001 [INF] Request finished in 149.5641ms 200 application/javascript (791a596a)
+2019-03-29T23:30:22.1746205+07:00 0HLLKCD6QJARM:00000001 [INF] Request finished in 154.8441ms 200 text/css (791a596a)
+2019-03-29T23:30:22.1810543+07:00 0HLLKCD6QJARR:00000001 [INF] Request finished in 154.9572ms 200 application/javascript (791a596a)
+2019-03-29T23:30:22.1851822+07:00 0HLLKCD6QJARN:00000001 [INF] Request finished in 161.8308ms 200 application/javascript (791a596a)
+2019-03-29T23:30:22.6334925+07:00 0HLLKCD6QJART:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin   (ca22a1cb)
+2019-03-29T23:30:22.6342540+07:00 0HLLKCD6QJART:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:30:22.6346005+07:00 0HLLKCD6QJART:00000002 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.LoginController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:30:22.6347359+07:00 0HLLKCD6QJART:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-03-29T23:30:22.6353645+07:00 0HLLKCD6QJART:00000002 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.LoginController.Index (WebCoreShop)" in 0.8063ms (afa2e885)
+2019-03-29T23:30:22.6354639+07:00 0HLLKCD6QJART:00000002 [INF] Request finished in 2.0905ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:30:22.9620786+07:00 0HLLKCD6QJARI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2019-03-29T23:30:22.9700524+07:00 0HLLKCD6QJARI:00000002 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2019-03-29T23:30:23.1789603+07:00 0HLLKCD6QJARI:00000002 [INF] Request finished in 216.8377ms 200 font/woff2 (791a596a)
+2019-03-29T23:30:29.0703024+07:00 0HLLKCD6QJARU:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44345/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-03-29T23:30:29.0708642+07:00 0HLLKCD6QJARU:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:30:29.1975616+07:00 0HLLKCD6QJARU:00000002 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.LoginController.Authen (WebCoreShop)" with arguments (["WebCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:30:29.2013674+07:00 0HLLKCD6QJARU:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:30:29.5382613+07:00 0HLLKCD6QJARU:00000002 [INF] Executed DbCommand ("331"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-03-29T23:30:29.5851134+07:00 0HLLKCD6QJARU:00000002 [INF] Executed DbCommand ("10"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-03-29T23:30:29.6358473+07:00 0HLLKCD6QJARU:00000002 [INF] Executed DbCommand ("49"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-29T23:30:29.6507570+07:00 0HLLKCD6QJARU:00000002 [INF] Executed DbCommand ("13"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-03-29T23:30:29.6642237+07:00 0HLLKCD6QJARU:00000002 [INF] Executed DbCommand ("12"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-03-29T23:30:29.6673045+07:00 0HLLKCD6QJARU:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-29T23:30:29.6692665+07:00 0HLLKCD6QJARU:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-03-29T23:30:29.6694945+07:00 0HLLKCD6QJARU:00000002 [INF] User logged in. (fdce0db4)
+2019-03-29T23:30:29.6729265+07:00 0HLLKCD6QJARU:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:30:29.7180835+07:00 0HLLKCD6QJARU:00000002 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.LoginController.Authen (WebCoreShop)" in 557.3917ms (afa2e885)
+2019-03-29T23:30:29.7188810+07:00 0HLLKCD6QJARU:00000002 [INF] Request finished in 648.6457ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:30:29.7400860+07:00 0HLLKCD6QJARJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/Admin/Home/Index   (ca22a1cb)
+2019-03-29T23:30:29.7406355+07:00 0HLLKCD6QJARJ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:30:29.7419080+07:00 0HLLKCD6QJARJ:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:30:29.7422590+07:00 0HLLKCD6QJARJ:00000002 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.HomeController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:30:29.8522644+07:00 0HLLKCD6QJARJ:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-03-29T23:30:30.0462313+07:00 0HLLKCD6QJARJ:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:30:30.1818951+07:00 0HLLKCD6QJARJ:00000002 [INF] Executed DbCommand ("103"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:30:30.6011975+07:00 0HLLKCD6QJARJ:00000002 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.HomeController.Index (WebCoreShop)" in 859.4861ms (afa2e885)
+2019-03-29T23:30:30.6018155+07:00 0HLLKCD6QJARJ:00000002 [INF] Request finished in 861.7677ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:30:30.6436709+07:00 0HLLKCD6QJARQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2019-03-29T23:30:30.6436812+07:00 0HLLKCD6QJARK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-03-29T23:30:30.6440653+07:00 0HLLKCD6QJARQ:00000002 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2019-03-29T23:30:30.6441955+07:00 0HLLKCD6QJARQ:00000002 [INF] Request finished in 0.6566ms 304 text/css (791a596a)
+2019-03-29T23:30:30.6552908+07:00 0HLLKCD6QJARK:00000003 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2019-03-29T23:30:30.6554978+07:00 0HLLKCD6QJARK:00000003 [INF] Request finished in 11.9326ms 304 text/css (791a596a)
+2019-03-29T23:30:30.6583382+07:00 0HLLKCD6QJARS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2019-03-29T23:30:30.6587873+07:00 0HLLKCD6QJARS:00000002 [INF] The file "/lib/ckeditor/skins/moono/editor.css" was not modified (f1f8d725)
+2019-03-29T23:30:30.6590418+07:00 0HLLKCD6QJARS:00000002 [INF] Request finished in 0.8915ms 304 text/css (791a596a)
+2019-03-29T23:30:30.6617724+07:00 0HLLKCD6QJARL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2019-03-29T23:30:30.6620509+07:00 0HLLKCD6QJARL:00000002 [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2019-03-29T23:30:30.6628456+07:00 0HLLKCD6QJARH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/mustache/mustache.js   (ca22a1cb)
+2019-03-29T23:30:30.6629463+07:00 0HLLKCD6QJARP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/nprogress/nprogress.js   (ca22a1cb)
+2019-03-29T23:30:30.6630890+07:00 0HLLKCD6QJARP:00000002 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2019-03-29T23:30:30.6632126+07:00 0HLLKCD6QJARO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin-side/images/img.jpg   (ca22a1cb)
+2019-03-29T23:30:30.6636851+07:00 0HLLKCD6QJARM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2019-03-29T23:30:30.6638824+07:00 0HLLKCD6QJARM:00000002 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2019-03-29T23:30:30.6643639+07:00 0HLLKCD6QJARR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-03-29T23:30:30.6645118+07:00 0HLLKCD6QJARR:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2019-03-29T23:30:30.6657520+07:00 0HLLKCD6QJARR:00000002 [INF] Request finished in 1.3551ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.6658408+07:00 0HLLKCD6QJARN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2019-03-29T23:30:30.6660266+07:00 0HLLKCD6QJARN:00000002 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2019-03-29T23:30:30.6682346+07:00 0HLLKCD6QJARH:00000003 [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2019-03-29T23:30:30.6691712+07:00 0HLLKCD6QJARO:00000002 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2019-03-29T23:30:30.6737719+07:00 0HLLKCD6QJART:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-03-29T23:30:30.6749140+07:00 0HLLKCD6QJART:00000003 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2019-03-29T23:30:30.6755374+07:00 0HLLKCD6QJARI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/moment/moment.js   (ca22a1cb)
+2019-03-29T23:30:30.6784476+07:00 0HLLKCD6QJARJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootbox/dist/bootbox.min.js   (ca22a1cb)
+2019-03-29T23:30:30.6784435+07:00 0HLLKCD6QJARU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-03-29T23:30:30.6787279+07:00 0HLLKCD6QJARU:00000003 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-03-29T23:30:30.6788889+07:00 0HLLKCD6QJARQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin-side/js/custom.js   (ca22a1cb)
+2019-03-29T23:30:30.6790575+07:00 0HLLKCD6QJARQ:00000003 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2019-03-29T23:30:30.6837535+07:00 0HLLKCD6QJARO:00000002 [INF] Request finished in 20.4559ms 200 image/jpeg (791a596a)
+2019-03-29T23:30:30.6904809+07:00 0HLLKCD6QJARN:00000002 [INF] Request finished in 23.5781ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.6919232+07:00 0HLLKCD6QJARH:00000003 [INF] Request finished in 28.9815ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.6963814+07:00 0HLLKCD6QJARJ:00000003 [INF] Sending file. Request path: '"/lib/bootbox/dist/bootbox.min.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\bootbox\dist\bootbox.min.js"' (27b0a520)
+2019-03-29T23:30:30.6998741+07:00 0HLLKCD6QJARI:00000003 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\moment\moment.js"' (27b0a520)
+2019-03-29T23:30:30.7000177+07:00 0HLLKCD6QJARP:00000002 [INF] Request finished in 32.9848ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.7100637+07:00 0HLLKCD6QJARM:00000002 [INF] Request finished in 45.6116ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.7119515+07:00 0HLLKCD6QJARK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-03-29T23:30:30.7125977+07:00 0HLLKCD6QJARK:00000004 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2019-03-29T23:30:30.7335077+07:00 0HLLKCD6QJARQ:00000003 [INF] Request finished in 54.069ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.7357962+07:00 0HLLKCD6QJARS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/shared/main_admin.js   (ca22a1cb)
+2019-03-29T23:30:30.7363538+07:00 0HLLKCD6QJARS:00000003 [INF] Sending file. Request path: '"/app/shared/main_admin.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\app\shared\main_admin.js"' (27b0a520)
+2019-03-29T23:30:30.7365551+07:00 0HLLKCD6QJARU:00000003 [INF] Request finished in 57.5788ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.7373868+07:00 0HLLKCD6QJARS:00000003 [INF] Request finished in 1.6406ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.7449834+07:00 0HLLKCD6QJARJ:00000003 [INF] Request finished in 66.1291ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.7585030+07:00 0HLLKCD6QJARI:00000003 [INF] Request finished in 82.8029ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.7621193+07:00 0HLLKCD6QJARK:00000004 [INF] Request finished in 49.991ms 200 application/javascript (791a596a)
+2019-03-29T23:30:30.7904817+07:00 0HLLKCD6QJARR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2019-03-29T23:30:30.7912610+07:00 0HLLKCD6QJARR:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2019-03-29T23:30:30.7925386+07:00 0HLLKCD6QJARR:00000003 [INF] Request finished in 1.3058ms 200 font/woff2 (791a596a)
+2019-03-29T23:30:30.7931268+07:00 0HLLKCD6QJART:00000003 [INF] Request finished in 119.5164ms 200 application/javascript (791a596a)
+2019-03-29T23:30:31.0107887+07:00 0HLLKCD6QJARL:00000002 [INF] Request finished in 349.3138ms 200 application/javascript (791a596a)
+2019-03-29T23:30:46.1744883+07:00 0HLLKCD6QJARN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/role/index   (ca22a1cb)
+2019-03-29T23:30:46.1758894+07:00 0HLLKCD6QJARN:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:30:46.1786208+07:00 0HLLKCD6QJARN:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:30:46.1798524+07:00 0HLLKCD6QJARN:00000003 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:30:46.2967361+07:00 0HLLKCD6QJARN:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2019-03-29T23:30:46.5012739+07:00 0HLLKCD6QJARN:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:30:46.5039321+07:00 0HLLKCD6QJARN:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:30:46.5096284+07:00 0HLLKCD6QJARN:00000003 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" in 330.9829ms (afa2e885)
+2019-03-29T23:30:46.5102995+07:00 0HLLKCD6QJARN:00000003 [INF] Request finished in 336.2107ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:30:46.5336200+07:00 0HLLKCD6QJARO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-treegrid/js/jquery.treegrid.js   (ca22a1cb)
+2019-03-29T23:30:46.5339417+07:00 0HLLKCD6QJARO:00000003 [INF] Sending file. Request path: '"/lib/jquery-treegrid/js/jquery.treegrid.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-treegrid\js\jquery.treegrid.js"' (27b0a520)
+2019-03-29T23:30:46.5352299+07:00 0HLLKCD6QJARH:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-treegrid/css/jquery.treegrid.css   (ca22a1cb)
+2019-03-29T23:30:46.5370208+07:00 0HLLKCD6QJARH:00000004 [INF] Sending file. Request path: '"/lib/jquery-treegrid/css/jquery.treegrid.css"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-treegrid\css\jquery.treegrid.css"' (27b0a520)
+2019-03-29T23:30:46.5391338+07:00 0HLLKCD6QJARP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/controllers/role/Index.js   (ca22a1cb)
+2019-03-29T23:30:46.5400963+07:00 0HLLKCD6QJARP:00000003 [INF] Sending file. Request path: '"/app/controllers/role/Index.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\app\controllers\role\Index.js"' (27b0a520)
+2019-03-29T23:30:46.5445542+07:00 0HLLKCD6QJARH:00000004 [INF] Request finished in 9.3002ms 200 text/css (791a596a)
+2019-03-29T23:30:46.5495219+07:00 0HLLKCD6QJARO:00000003 [INF] Request finished in 16.22ms 200 application/javascript (791a596a)
+2019-03-29T23:30:46.5816990+07:00 0HLLKCD6QJARP:00000003 [INF] Request finished in 42.4045ms 200 application/javascript (791a596a)
+2019-03-29T23:30:50.5989317+07:00 0HLLKCD6QJARM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2019-03-29T23:30:50.5993282+07:00 0HLLKCD6QJARM:00000003 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2019-03-29T23:30:50.5994156+07:00 0HLLKCD6QJARM:00000003 [INF] Request finished in 0.5998ms 304 text/plain (791a596a)
+2019-03-29T23:31:36.2627222+07:00 0HLLKCD6QJARN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/user/index   (ca22a1cb)
+2019-03-29T23:31:36.2634924+07:00 0HLLKCD6QJARN:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:31:36.2649407+07:00 0HLLKCD6QJARN:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:31:36.2653207+07:00 0HLLKCD6QJARN:00000004 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.UserController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:31:36.3619390+07:00 0HLLKCD6QJARN:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/User/Index.cshtml". (9707eebe)
+2019-03-29T23:31:36.4868675+07:00 0HLLKCD6QJARN:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:31:36.4897362+07:00 0HLLKCD6QJARN:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:31:36.4961827+07:00 0HLLKCD6QJARN:00000004 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.UserController.Index (WebCoreShop)" in 230.8027ms (afa2e885)
+2019-03-29T23:31:36.4968399+07:00 0HLLKCD6QJARN:00000004 [INF] Request finished in 233.7827ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:31:36.5409129+07:00 0HLLKCD6QJARH:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/controllers/user/index.js?v=iRzigpCWUoEjeyNgWuPl5vUCq-s0F5ZTTziwGVBo9-4   (ca22a1cb)
+2019-03-29T23:31:36.5418771+07:00 0HLLKCD6QJARH:00000005 [INF] Sending file. Request path: '"/app/controllers/user/index.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\app\controllers\user\index.js"' (27b0a520)
+2019-03-29T23:31:36.5426265+07:00 0HLLKCD6QJARH:00000005 [INF] Request finished in 2.0592ms 200 application/javascript (791a596a)
+2019-03-29T23:31:36.6502589+07:00 0HLLKCD6QJARO:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-03-29T23:31:36.6509504+07:00 0HLLKCD6QJARO:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:31:36.6529790+07:00 0HLLKCD6QJARO:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:31:36.6537546+07:00 0HLLKCD6QJARO:00000004 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.UserController.GetAllPaging (WebCoreShop)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:31:36.6582729+07:00 0HLLKCD6QJARO:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:31:36.6663743+07:00 0HLLKCD6QJARO:00000004 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2019-03-29T23:31:36.6730104+07:00 0HLLKCD6QJARO:00000004 [WRN] Query: '"(from AppUser x in DbSet<AppUser> select new AppUserViewModel{ { 
+    UserName = [x].UserName, , 
+..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2019-03-29T23:31:36.6996195+07:00 0HLLKCD6QJARO:00000004 [INF] Executed DbCommand ("16"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-03-29T23:31:36.7026047+07:00 0HLLKCD6QJARO:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:31:36.7221928+07:00 0HLLKCD6QJARO:00000004 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.UserController.GetAllPaging (WebCoreShop)" in 69.177ms (afa2e885)
+2019-03-29T23:31:36.7223835+07:00 0HLLKCD6QJARO:00000004 [INF] Request finished in 72.2159ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:31:36.7729038+07:00 0HLLKCD6QJARM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/user/null   (ca22a1cb)
+2019-03-29T23:31:36.7729179+07:00 0HLLKCD6QJARP:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-03-29T23:31:36.7735114+07:00 0HLLKCD6QJARP:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:31:36.7762187+07:00 0HLLKCD6QJARM:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:31:36.7765442+07:00 0HLLKCD6QJARM:00000004 [INF] Request finished in 3.6617ms 404  (791a596a)
+2019-03-29T23:31:36.7797602+07:00 0HLLKCD6QJARP:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:31:36.7803999+07:00 0HLLKCD6QJARP:00000004 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.UserController.GetAllPaging (WebCoreShop)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:31:36.7847445+07:00 0HLLKCD6QJARP:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:31:36.8035466+07:00 0HLLKCD6QJARP:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2019-03-29T23:31:36.8052338+07:00 0HLLKCD6QJARP:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-03-29T23:31:36.8055049+07:00 0HLLKCD6QJARP:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:31:36.8057041+07:00 0HLLKCD6QJARP:00000004 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.UserController.GetAllPaging (WebCoreShop)" in 26.4173ms (afa2e885)
+2019-03-29T23:31:36.8058339+07:00 0HLLKCD6QJARP:00000004 [INF] Request finished in 33.0369ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:31:36.8536646+07:00 0HLLKCD6QJARN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/user/null   (ca22a1cb)
+2019-03-29T23:31:36.8543225+07:00 0HLLKCD6QJARN:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:31:36.8544655+07:00 0HLLKCD6QJARN:00000005 [INF] Request finished in 0.9451ms 404  (791a596a)
+2019-03-29T23:31:40.2667740+07:00 0HLLKCD6QJARH:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/role/index   (ca22a1cb)
+2019-03-29T23:31:40.2674830+07:00 0HLLKCD6QJARH:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:31:40.2677525+07:00 0HLLKCD6QJARH:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:31:40.2678573+07:00 0HLLKCD6QJARH:00000006 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:31:40.2679534+07:00 0HLLKCD6QJARH:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2019-03-29T23:31:40.2690357+07:00 0HLLKCD6QJARH:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:31:40.2746407+07:00 0HLLKCD6QJARH:00000006 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:31:40.2769554+07:00 0HLLKCD6QJARH:00000006 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" in 9.1662ms (afa2e885)
+2019-03-29T23:31:40.2781581+07:00 0HLLKCD6QJARH:00000006 [INF] Request finished in 11.4354ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:40:50.9740534+07:00 0HLLKCD6QJARV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/role/index   (ca22a1cb)
+2019-03-29T23:40:50.9748892+07:00 0HLLKCD6QJARV:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:40:50.9751530+07:00 0HLLKCD6QJARV:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:40:50.9752772+07:00 0HLLKCD6QJARV:00000001 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:40:51.1072528+07:00 0HLLKCD6QJARV:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2019-03-29T23:40:51.1188210+07:00 0HLLKCD6QJARV:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:40:51.4082492+07:00 0HLLKCD6QJARV:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:40:51.4142843+07:00 0HLLKCD6QJARV:00000001 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" in 438.9946ms (afa2e885)
+2019-03-29T23:40:51.4146445+07:00 0HLLKCD6QJARV:00000001 [INF] Request finished in 440.6823ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:40:51.4797127+07:00 0HLLKCD6QJARV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2019-03-29T23:40:51.4799917+07:00 0HLLKCD6QJARV:00000002 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2019-03-29T23:40:51.5039004+07:00 0HLLKCD6QJARV:00000002 [INF] Request finished in 24.3716ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.5039103+07:00 0HLLKCD6QJAS2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/nprogress/nprogress.js   (ca22a1cb)
+2019-03-29T23:40:51.5039097+07:00 0HLLKCD6QJAS0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin-side/images/img.jpg   (ca22a1cb)
+2019-03-29T23:40:51.5039246+07:00 0HLLKCD6QJAS1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2019-03-29T23:40:51.5041024+07:00 0HLLKCD6QJAS2:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2019-03-29T23:40:51.5041265+07:00 0HLLKCD6QJAS0:00000001 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2019-03-29T23:40:51.5041227+07:00 0HLLKCD6QJAS1:00000001 [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2019-03-29T23:40:51.5054934+07:00 0HLLKCD6QJAS2:00000001 [INF] Request finished in 1.0807ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.5065722+07:00 0HLLKCD6QJAS0:00000001 [INF] Request finished in 1.9193ms 200 image/jpeg (791a596a)
+2019-03-29T23:40:51.5186397+07:00 0HLLKCD6QJAS3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/mustache/mustache.js   (ca22a1cb)
+2019-03-29T23:40:51.5206124+07:00 0HLLKCD6QJAS3:00000001 [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2019-03-29T23:40:51.5223119+07:00 0HLLKCD6QJAS3:00000001 [INF] Request finished in 3.6054ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.5322899+07:00 0HLLKCD6QJAS1:00000001 [INF] Request finished in 28.3644ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.5513414+07:00 0HLLKCD6QJAS2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-03-29T23:40:51.5514729+07:00 0HLLKCD6QJARV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2019-03-29T23:40:51.5519022+07:00 0HLLKCD6QJARV:00000003 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2019-03-29T23:40:51.5528770+07:00 0HLLKCD6QJARV:00000003 [INF] Request finished in 1.4215ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.5536518+07:00 0HLLKCD6QJAS2:00000002 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2019-03-29T23:40:51.5583637+07:00 0HLLKCD6QJAS3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-03-29T23:40:51.5589099+07:00 0HLLKCD6QJAS3:00000002 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2019-03-29T23:40:51.5604247+07:00 0HLLKCD6QJAS3:00000002 [INF] Request finished in 2.05ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.5609567+07:00 0HLLKCD6QJAS2:00000002 [INF] Request finished in 9.7083ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.5727708+07:00 0HLLKCD6QJAS0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/moment/moment.js   (ca22a1cb)
+2019-03-29T23:40:51.5736511+07:00 0HLLKCD6QJAS0:00000002 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\moment\moment.js"' (27b0a520)
+2019-03-29T23:40:51.5760267+07:00 0HLLKCD6QJAS0:00000002 [INF] Request finished in 3.2645ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.5777932+07:00 0HLLKCD6QJARV:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-03-29T23:40:51.5780455+07:00 0HLLKCD6QJARV:00000004 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-03-29T23:40:51.5792158+07:00 0HLLKCD6QJARV:00000004 [INF] Request finished in 1.0996ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.5855917+07:00 0HLLKCD6QJAS3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/bootbox/dist/bootbox.min.js   (ca22a1cb)
+2019-03-29T23:40:51.5862450+07:00 0HLLKCD6QJAS3:00000003 [INF] Sending file. Request path: '"/lib/bootbox/dist/bootbox.min.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\bootbox\dist\bootbox.min.js"' (27b0a520)
+2019-03-29T23:40:51.5868808+07:00 0HLLKCD6QJAS3:00000003 [INF] Request finished in 3.5257ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.6161285+07:00 0HLLKCD6QJARV:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/controllers/role/Index.js   (ca22a1cb)
+2019-03-29T23:40:51.6165786+07:00 0HLLKCD6QJARV:00000005 [INF] The file "/app/controllers/role/Index.js" was not modified (f1f8d725)
+2019-03-29T23:40:51.6168998+07:00 0HLLKCD6QJARV:00000005 [INF] Request finished in 0.9102ms 304 application/javascript (791a596a)
+2019-03-29T23:40:51.6172073+07:00 0HLLKCD6QJAS3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-treegrid/js/jquery.treegrid.js   (ca22a1cb)
+2019-03-29T23:40:51.6175142+07:00 0HLLKCD6QJAS3:00000004 [INF] Sending file. Request path: '"/lib/jquery-treegrid/js/jquery.treegrid.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-treegrid\js\jquery.treegrid.js"' (27b0a520)
+2019-03-29T23:40:51.6179231+07:00 0HLLKCD6QJAS3:00000004 [INF] Request finished in 0.7393ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.6184020+07:00 0HLLKCD6QJAS0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/shared/main_admin.js   (ca22a1cb)
+2019-03-29T23:40:51.6187650+07:00 0HLLKCD6QJAS0:00000003 [INF] Sending file. Request path: '"/app/shared/main_admin.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\app\shared\main_admin.js"' (27b0a520)
+2019-03-29T23:40:51.6188233+07:00 0HLLKCD6QJAS4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin-side/js/custom.js   (ca22a1cb)
+2019-03-29T23:40:51.6189769+07:00 0HLLKCD6QJAS4:00000001 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2019-03-29T23:40:51.6192282+07:00 0HLLKCD6QJAS0:00000003 [INF] Request finished in 0.6756ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.6203011+07:00 0HLLKCD6QJAS4:00000001 [INF] Request finished in 1.3559ms 200 application/javascript (791a596a)
+2019-03-29T23:40:51.6744531+07:00 0HLLKCD6QJARV:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2019-03-29T23:40:51.6750736+07:00 0HLLKCD6QJARV:00000006 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2019-03-29T23:40:51.6758952+07:00 0HLLKCD6QJARV:00000006 [INF] Request finished in 1.9227ms 200 font/woff2 (791a596a)
+2019-03-29T23:40:51.9844785+07:00 0HLLKCD6QJAS0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/favicon.ico   (ca22a1cb)
+2019-03-29T23:40:51.9847440+07:00 0HLLKCD6QJAS0:00000004 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2019-03-29T23:40:51.9925917+07:00 0HLLKCD6QJAS0:00000004 [INF] Request finished in 8.1709ms 200 image/x-icon (791a596a)
+2019-03-29T23:49:48.6186164+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:49:48.8761143+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:49:48.8912681+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:49:48.8972542+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:49:48.9086791+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-03-29T23:49:48.9255725+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-03-29T23:49:48.9311117+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-03-29T23:49:48.9359944+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-03-29T23:49:48.9405861+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-03-29T23:49:48.9457059+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-03-29T23:49:48.9507523+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-03-29T23:49:48.9562266+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:49:48.9599896+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:49:48.9654218+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:49:49.1443304+07:00 0HLLKCQ78UATE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/   (ca22a1cb)
+2019-03-29T23:49:49.1688827+07:00 0HLLKCQ78UATE:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:49:49.2540436+07:00 0HLLKCQ78UATE:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:49:49.2620773+07:00 0HLLKCQ78UATE:00000001 [INF] Executing action method "WebCoreShop.Controllers.HomeController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:49:51.2277287+07:00 0HLLKCQ78UATE:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-03-29T23:49:51.8545852+07:00 0HLLKCQ78UATE:00000001 [INF] Executed action "WebCoreShop.Controllers.HomeController.Index (WebCoreShop)" in 2610.7791ms (afa2e885)
+2019-03-29T23:49:51.8570446+07:00 0HLLKCQ78UATE:00000001 [INF] Request finished in 2719.5912ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:49:51.8941379+07:00 0HLLKCQ78UATH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/images/banner1.svg   (ca22a1cb)
+2019-03-29T23:49:51.8941385+07:00 0HLLKCQ78UATG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/images/banner4.svg   (ca22a1cb)
+2019-03-29T23:49:51.8947539+07:00 0HLLKCQ78UATE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/images/banner2.svg   (ca22a1cb)
+2019-03-29T23:49:51.8941379+07:00 0HLLKCQ78UATF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/images/banner3.svg   (ca22a1cb)
+2019-03-29T23:49:51.8965416+07:00 0HLLKCQ78UATE:00000002 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\images\banner2.svg"' (27b0a520)
+2019-03-29T23:49:51.8965416+07:00 0HLLKCQ78UATH:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\images\banner1.svg"' (27b0a520)
+2019-03-29T23:49:51.8965427+07:00 0HLLKCQ78UATG:00000001 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\images\banner4.svg"' (27b0a520)
+2019-03-29T23:49:51.8969739+07:00 0HLLKCQ78UATF:00000001 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\images\banner3.svg"' (27b0a520)
+2019-03-29T23:49:51.8980940+07:00 0HLLKCQ78UATI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/css/site.css   (ca22a1cb)
+2019-03-29T23:49:51.8984610+07:00 0HLLKCQ78UATI:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\css\site.css"' (27b0a520)
+2019-03-29T23:49:51.9009111+07:00 0HLLKCQ78UATJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2019-03-29T23:49:51.9016474+07:00 0HLLKCQ78UATJ:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\js\site.js"' (27b0a520)
+2019-03-29T23:49:51.9031871+07:00 0HLLKCQ78UATI:00000001 [INF] Request finished in 4.8728ms 200 text/css (791a596a)
+2019-03-29T23:49:51.9076084+07:00 0HLLKCQ78UATG:00000001 [INF] Request finished in 13.4503ms 200 image/svg+xml (791a596a)
+2019-03-29T23:49:51.9076085+07:00 0HLLKCQ78UATH:00000001 [INF] Request finished in 13.4515ms 200 image/svg+xml (791a596a)
+2019-03-29T23:49:51.9076084+07:00 0HLLKCQ78UATF:00000001 [INF] Request finished in 13.4522ms 200 image/svg+xml (791a596a)
+2019-03-29T23:49:51.9076347+07:00 0HLLKCQ78UATJ:00000001 [INF] Request finished in 7.5574ms 200 application/javascript (791a596a)
+2019-03-29T23:49:51.9078099+07:00 0HLLKCQ78UATE:00000002 [INF] Request finished in 14.5228ms 200 image/svg+xml (791a596a)
+2019-03-29T23:50:24.2765936+07:00 0HLLKCQ78UATI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/   (ca22a1cb)
+2019-03-29T23:50:24.2779249+07:00 0HLLKCQ78UATI:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:50:24.2786069+07:00 0HLLKCQ78UATI:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:50:24.2788095+07:00 0HLLKCQ78UATI:00000002 [INF] Executing action method "WebCoreShop.Controllers.HomeController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:50:24.2790312+07:00 0HLLKCQ78UATI:00000002 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-03-29T23:50:24.2835007+07:00 0HLLKCQ78UATI:00000002 [INF] Executed action "WebCoreShop.Controllers.HomeController.Index (WebCoreShop)" in 5.0688ms (afa2e885)
+2019-03-29T23:50:24.2836388+07:00 0HLLKCQ78UATI:00000002 [INF] Request finished in 7.2628ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:50:24.5398830+07:00 0HLLKCQ78UATJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/favicon.ico   (ca22a1cb)
+2019-03-29T23:50:24.5401486+07:00 0HLLKCQ78UATJ:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2019-03-29T23:50:24.5404876+07:00 0HLLKCQ78UATJ:00000002 [INF] Request finished in 0.7177ms 200 image/x-icon (791a596a)
+2019-03-29T23:50:27.2081877+07:00 0HLLKCQ78UATH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin   (ca22a1cb)
+2019-03-29T23:50:27.2088666+07:00 0HLLKCQ78UATH:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:50:27.2132334+07:00 0HLLKCQ78UATH:00000002 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.LoginController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:50:27.4456667+07:00 0HLLKCQ78UATH:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-03-29T23:50:27.4733095+07:00 0HLLKCQ78UATH:00000002 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.LoginController.Index (WebCoreShop)" in 260.4243ms (afa2e885)
+2019-03-29T23:50:27.4735057+07:00 0HLLKCQ78UATH:00000002 [INF] Request finished in 265.457ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:50:28.4499026+07:00 0HLLKCQ78UATG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin   (ca22a1cb)
+2019-03-29T23:50:28.4504442+07:00 0HLLKCQ78UATG:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:50:28.4507501+07:00 0HLLKCQ78UATG:00000002 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.LoginController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:50:28.4508440+07:00 0HLLKCQ78UATG:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-03-29T23:50:28.4514464+07:00 0HLLKCQ78UATG:00000002 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.LoginController.Index (WebCoreShop)" in 0.7258ms (afa2e885)
+2019-03-29T23:50:28.4515928+07:00 0HLLKCQ78UATG:00000002 [INF] Request finished in 1.744ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:50:36.6854986+07:00 0HLLKCQ78UATF:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44345/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-03-29T23:50:36.6861361+07:00 0HLLKCQ78UATF:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:50:36.7349756+07:00 0HLLKCQ78UATF:00000002 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.LoginController.Authen (WebCoreShop)" with arguments (["WebCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:50:36.7387229+07:00 0HLLKCQ78UATF:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:50:36.7855991+07:00 0HLLKCQ78UATF:00000002 [INF] Executed DbCommand ("26"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-03-29T23:50:36.8308728+07:00 0HLLKCQ78UATF:00000002 [WRN] Invalid password for user "27589303-4c44-4f67-7e2d-08d6b396dac4". (c2dce6c7)
+2019-03-29T23:50:36.8312093+07:00 0HLLKCQ78UATF:00000002 [WRN] User "27589303-4c44-4f67-7e2d-08d6b396dac4" failed to provide the correct password. (ec8d2479)
+2019-03-29T23:50:36.8345038+07:00 0HLLKCQ78UATF:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:50:36.8637145+07:00 0HLLKCQ78UATF:00000002 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.LoginController.Authen (WebCoreShop)" in 153.059ms (afa2e885)
+2019-03-29T23:50:36.8657202+07:00 0HLLKCQ78UATF:00000002 [INF] Request finished in 179.9932ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:50:39.6117506+07:00 0HLLKCQ78UATE:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44345/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-03-29T23:50:39.6123547+07:00 0HLLKCQ78UATE:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:50:39.6139393+07:00 0HLLKCQ78UATE:00000003 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.LoginController.Authen (WebCoreShop)" with arguments (["WebCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:50:39.6142840+07:00 0HLLKCQ78UATE:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:50:39.7635001+07:00 0HLLKCQ78UATE:00000003 [INF] Executed DbCommand ("147"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-03-29T23:50:39.7713950+07:00 0HLLKCQ78UATE:00000003 [WRN] Invalid password for user "27589303-4c44-4f67-7e2d-08d6b396dac4". (c2dce6c7)
+2019-03-29T23:50:39.7715010+07:00 0HLLKCQ78UATE:00000003 [WRN] User "27589303-4c44-4f67-7e2d-08d6b396dac4" failed to provide the correct password. (ec8d2479)
+2019-03-29T23:50:39.7719342+07:00 0HLLKCQ78UATE:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:50:39.7722120+07:00 0HLLKCQ78UATE:00000003 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.LoginController.Authen (WebCoreShop)" in 159.5668ms (afa2e885)
+2019-03-29T23:50:39.7723692+07:00 0HLLKCQ78UATE:00000003 [INF] Request finished in 160.7157ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:50:52.1267833+07:00 0HLLKCQ78UATI:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44345/admin/login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-03-29T23:50:52.1275262+07:00 0HLLKCQ78UATI:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:50:52.1279602+07:00 0HLLKCQ78UATI:00000003 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.LoginController.Authen (WebCoreShop)" with arguments (["WebCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:50:52.1282765+07:00 0HLLKCQ78UATI:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:50:52.1303392+07:00 0HLLKCQ78UATI:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-03-29T23:50:52.1637281+07:00 0HLLKCQ78UATI:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-03-29T23:50:52.1870588+07:00 0HLLKCQ78UATI:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-29T23:50:52.1959513+07:00 0HLLKCQ78UATI:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-03-29T23:50:52.2112995+07:00 0HLLKCQ78UATI:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-03-29T23:50:52.2131287+07:00 0HLLKCQ78UATI:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-29T23:50:52.2164509+07:00 0HLLKCQ78UATI:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-03-29T23:50:52.2166136+07:00 0HLLKCQ78UATI:00000003 [INF] User logged in. (fdce0db4)
+2019-03-29T23:50:52.2168299+07:00 0HLLKCQ78UATI:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:50:52.2169575+07:00 0HLLKCQ78UATI:00000003 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.LoginController.Authen (WebCoreShop)" in 89.2659ms (afa2e885)
+2019-03-29T23:50:52.2170648+07:00 0HLLKCQ78UATI:00000003 [INF] Request finished in 90.3989ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:50:52.2292665+07:00 0HLLKCQ78UATJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/Admin/Home/Index   (ca22a1cb)
+2019-03-29T23:50:52.2322352+07:00 0HLLKCQ78UATJ:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:50:52.2340678+07:00 0HLLKCQ78UATJ:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:50:52.2344286+07:00 0HLLKCQ78UATJ:00000003 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.HomeController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:50:52.3504614+07:00 0HLLKCQ78UATJ:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-03-29T23:50:52.5771102+07:00 0HLLKCQ78UATJ:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:50:52.6084878+07:00 0HLLKCQ78UATJ:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:50:52.8902439+07:00 0HLLKCQ78UATJ:00000003 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.HomeController.Index (WebCoreShop)" in 656.1402ms (afa2e885)
+2019-03-29T23:50:52.8908991+07:00 0HLLKCQ78UATJ:00000003 [INF] Request finished in 662.2233ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:50:58.0414537+07:00 0HLLKCQ78UATH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/role/index   (ca22a1cb)
+2019-03-29T23:50:58.0421440+07:00 0HLLKCQ78UATH:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:50:58.0444236+07:00 0HLLKCQ78UATH:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:50:58.0458314+07:00 0HLLKCQ78UATH:00000003 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:50:58.1641860+07:00 0HLLKCQ78UATH:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2019-03-29T23:50:58.3615357+07:00 0HLLKCQ78UATH:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:50:58.3639239+07:00 0HLLKCQ78UATH:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:50:58.3700518+07:00 0HLLKCQ78UATH:00000003 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" in 325.7122ms (afa2e885)
+2019-03-29T23:50:58.3708487+07:00 0HLLKCQ78UATH:00000003 [INF] Request finished in 329.4216ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:50:58.3982270+07:00 0HLLKCQ78UATG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/controllers/role/Index.js   (ca22a1cb)
+2019-03-29T23:50:58.3994465+07:00 0HLLKCQ78UATG:00000003 [INF] Sending file. Request path: '"/app/controllers/role/Index.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\app\controllers\role\Index.js"' (27b0a520)
+2019-03-29T23:50:58.4361292+07:00 0HLLKCQ78UATG:00000003 [INF] Request finished in 37.735ms 200 application/javascript (791a596a)
+2019-03-29T23:55:39.2471924+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:55:39.4960974+07:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:55:39.5126316+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:55:39.5175954+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:55:39.5291735+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-03-29T23:55:39.5444635+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-03-29T23:55:39.5478507+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-03-29T23:55:39.5524036+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-03-29T23:55:39.5565368+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-03-29T23:55:39.5597224+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-03-29T23:55:39.5631587+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-03-29T23:55:39.5691331+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:55:39.5725892+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:55:39.5756321+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-29T23:55:39.6766835+07:00 0HLLKCTFNTH6P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/role/index   (ca22a1cb)
+2019-03-29T23:55:39.7069494+07:00 0HLLKCTFNTH6P:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:55:39.8070594+07:00 0HLLKCTFNTH6P:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:55:39.8155767+07:00 0HLLKCTFNTH6P:00000001 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:55:41.7972863+07:00 0HLLKCTFNTH6P:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2019-03-29T23:55:42.2615023+07:00 0HLLKCTFNTH6P:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:55:42.3186062+07:00 0HLLKCTFNTH6P:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:55:42.6437709+07:00 0HLLKCTFNTH6P:00000001 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" in 2840.1653ms (afa2e885)
+2019-03-29T23:55:42.6467482+07:00 0HLLKCTFNTH6P:00000001 [INF] Request finished in 2977.2464ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:55:42.6928827+07:00 0HLLKCTFNTH6P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/controllers/role/Index.js   (ca22a1cb)
+2019-03-29T23:55:42.6948943+07:00 0HLLKCTFNTH6P:00000002 [INF] The file "/app/controllers/role/Index.js" was not modified (f1f8d725)
+2019-03-29T23:55:42.6963826+07:00 0HLLKCTFNTH6P:00000002 [INF] Request finished in 3.537ms 304 application/javascript (791a596a)
+2019-03-29T23:55:43.4789572+07:00 0HLLKCTFNTH6P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/favicon.ico   (ca22a1cb)
+2019-03-29T23:55:43.4797333+07:00 0HLLKCTFNTH6P:00000003 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2019-03-29T23:55:43.4816291+07:00 0HLLKCTFNTH6P:00000003 [INF] Request finished in 2.7647ms 200 image/x-icon (791a596a)
+2019-03-29T23:59:55.2351554+07:00 0HLLKCTFNTH6Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/role/index   (ca22a1cb)
+2019-03-29T23:59:55.2367976+07:00 0HLLKCTFNTH6Q:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:59:55.2376711+07:00 0HLLKCTFNTH6Q:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:59:55.2380202+07:00 0HLLKCTFNTH6Q:00000001 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:59:55.2385207+07:00 0HLLKCTFNTH6Q:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2019-03-29T23:59:55.2407620+07:00 0HLLKCTFNTH6Q:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:59:55.2554795+07:00 0HLLKCTFNTH6Q:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:59:55.2571415+07:00 0HLLKCTFNTH6Q:00000001 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.RoleController.Index (WebCoreShop)" in 19.7048ms (afa2e885)
+2019-03-29T23:59:55.2574506+07:00 0HLLKCTFNTH6Q:00000001 [INF] Request finished in 22.3918ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-29T23:59:55.3150910+07:00 0HLLKCTFNTH6Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/app/controllers/role/Index.js   (ca22a1cb)
+2019-03-29T23:59:55.3158800+07:00 0HLLKCTFNTH6Q:00000002 [INF] Sending file. Request path: '"/app/controllers/role/Index.js"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\app\controllers\role\Index.js"' (27b0a520)
+2019-03-29T23:59:55.3510903+07:00 0HLLKCTFNTH6Q:00000002 [INF] Request finished in 35.6217ms 200 application/javascript (791a596a)
+2019-03-29T23:59:55.4880157+07:00 0HLLKCTFNTH6Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-03-29T23:59:55.4885650+07:00 0HLLKCTFNTH6Q:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:59:55.5055605+07:00 0HLLKCTFNTH6Q:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:59:55.5485479+07:00 0HLLKCTFNTH6Q:00000003 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.RoleController.GetAllPaging (WebCoreShop)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:59:55.5538190+07:00 0HLLKCTFNTH6Q:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:59:55.5732622+07:00 0HLLKCTFNTH6Q:00000003 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2019-03-29T23:59:55.5847941+07:00 0HLLKCTFNTH6Q:00000003 [WRN] Query: '"(from AppRole dto in DbSet<AppRole> select new AppRoleViewModel{ { 
+    Id = (Nullable<Guid>)[dto]...."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2019-03-29T23:59:55.6979398+07:00 0HLLKCTFNTH6Q:00000003 [INF] Executed DbCommand ("95"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-03-29T23:59:55.7040283+07:00 0HLLKCTFNTH6Q:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:59:55.7428713+07:00 0HLLKCTFNTH6R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44345/favicon.ico   (ca22a1cb)
+2019-03-29T23:59:55.7437196+07:00 0HLLKCTFNTH6R:00000001 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2019-03-29T23:59:55.7442422+07:00 0HLLKCTFNTH6R:00000001 [INF] Request finished in 1.389ms 200 image/x-icon (791a596a)
+2019-03-29T23:59:55.7744461+07:00 0HLLKCTFNTH6Q:00000003 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.RoleController.GetAllPaging (WebCoreShop)" in 268.9474ms (afa2e885)
+2019-03-29T23:59:55.7747271+07:00 0HLLKCTFNTH6Q:00000003 [INF] Request finished in 286.8386ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:59:55.7920207+07:00 0HLLKCTFNTH6R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-03-29T23:59:55.7928763+07:00 0HLLKCTFNTH6R:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:59:55.7932942+07:00 0HLLKCTFNTH6R:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:59:55.7937755+07:00 0HLLKCTFNTH6R:00000002 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.RoleController.GetAllPaging (WebCoreShop)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:59:55.7944397+07:00 0HLLKCTFNTH6R:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:59:55.8048565+07:00 0HLLKCTFNTH6R:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2019-03-29T23:59:55.8065251+07:00 0HLLKCTFNTH6R:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-03-29T23:59:55.8069233+07:00 0HLLKCTFNTH6R:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:59:55.8073535+07:00 0HLLKCTFNTH6R:00000002 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.RoleController.GetAllPaging (WebCoreShop)" in 14.0942ms (afa2e885)
+2019-03-29T23:59:55.8074706+07:00 0HLLKCTFNTH6R:00000002 [INF] Request finished in 15.9239ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:59:59.0713862+07:00 0HLLKCTFNTH6R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44345/admin/Function/GetAll   (ca22a1cb)
+2019-03-29T23:59:59.0716712+07:00 0HLLKCTFNTH6Q:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44345/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2019-03-29T23:59:59.0718106+07:00 0HLLKCTFNTH6R:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:59:59.0720056+07:00 0HLLKCTFNTH6Q:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-29T23:59:59.0744027+07:00 0HLLKCTFNTH6Q:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:59:59.0766098+07:00 0HLLKCTFNTH6R:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-29T23:59:59.0769453+07:00 0HLLKCTFNTH6R:00000003 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.FunctionController.GetAll (WebCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:59:59.0792053+07:00 0HLLKCTFNTH6R:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:59:59.0880036+07:00 0HLLKCTFNTH6Q:00000004 [INF] Executing action method "WebCoreShop.Areas.Admin.Controllers.RoleController.ListAllFunction (WebCoreShop)" with arguments (["65e58835-7b67-42d0-0213-08d6b396da9b"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T23:59:59.0920487+07:00 0HLLKCTFNTH6R:00000003 [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-29T23:59:59.0956792+07:00 0HLLKCTFNTH6Q:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreShop.Data.EF " (9958f5bb)
+2019-03-29T23:59:59.0960624+07:00 0HLLKCTFNTH6R:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:59:59.1008717+07:00 0HLLKCTFNTH6R:00000003 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.FunctionController.GetAll (WebCoreShop)" in 23.8504ms (afa2e885)
+2019-03-29T23:59:59.1011033+07:00 0HLLKCTFNTH6R:00000003 [INF] Request finished in 29.7417ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:59:59.1356699+07:00 0HLLKCTFNTH6Q:00000004 [INF] Executed DbCommand ("9"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2019-03-29T23:59:59.1360653+07:00 0HLLKCTFNTH6Q:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T23:59:59.1383087+07:00 0HLLKCTFNTH6Q:00000004 [INF] Executed action "WebCoreShop.Areas.Admin.Controllers.RoleController.ListAllFunction (WebCoreShop)" in 63.9425ms (afa2e885)
+2019-03-29T23:59:59.1390729+07:00 0HLLKCTFNTH6Q:00000004 [INF] Request finished in 67.3957ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T23:59:59.2259433+07:00 0HLLKCTFNTH6R:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44345/lib/jquery-treegrid/img/collapse.png   (ca22a1cb)
+2019-03-29T23:59:59.2261676+07:00 0HLLKCTFNTH6R:00000004 [INF] Sending file. Request path: '"/lib/jquery-treegrid/img/collapse.png"'. Physical path: '"D:\Github\WebsiteShopping\WebCoreShop\wwwroot\lib\jquery-treegrid\img\collapse.png"' (27b0a520)
+2019-03-29T23:59:59.2381525+07:00 0HLLKCTFNTH6R:00000004 [INF] Request finished in 12.1985ms 200 image/png (791a596a)
