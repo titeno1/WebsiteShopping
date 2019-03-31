@@ -25,6 +25,8 @@ using Microsoft.Extensions.FileProviders;
 using System.IO;
 using Microsoft.AspNetCore.Http;
 using WebCoreShop.Infrastructure.Interfaces;
+using WebCoreShop.Authorization;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebCoreShop
 {
@@ -99,13 +101,13 @@ namespace WebCoreShop
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
-
+            services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddFile("Logs/tedu-{Date}.txt");
+            loggerFactory.AddFile("Logs/Account-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

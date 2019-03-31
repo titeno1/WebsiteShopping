@@ -15,7 +15,6 @@ D:\Github\WebsiteShopping\WebCoreShop\bin\Debug\netcoreapp2.0\WebCoreShop.Infras
 D:\Github\WebsiteShopping\WebCoreShop\bin\Debug\netcoreapp2.0\WebCoreShop.Utilities.pdb
 D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\WebCoreShop.csprojAssemblyReference.cache
 D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\WebCoreShop.csproj.CoreCompileInputs.cache
-D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\WebCoreShop.AssemblyInfoInputs.cache
 D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\WebCoreShop.AssemblyInfo.cs
 D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\WebCoreShop.csproj.CopyComplete
