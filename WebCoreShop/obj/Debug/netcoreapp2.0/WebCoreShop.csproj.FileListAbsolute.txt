@@ -20,3 +20,4 @@ D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\WebCoreShop.Assemb
 D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\WebCoreShop.csproj.CopyComplete
 D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\WebCoreShop.dll
 D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\WebCoreShop.pdb
+D:\Github\WebsiteShopping\WebCoreShop\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
