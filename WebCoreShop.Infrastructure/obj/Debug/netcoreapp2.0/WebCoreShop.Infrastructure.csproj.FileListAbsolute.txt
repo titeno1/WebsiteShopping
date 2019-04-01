@@ -1,9 +1,8 @@
-D:\Github\WebsiteShopping\WebCoreShop.Infrastructure\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.deps.json
-D:\Github\WebsiteShopping\WebCoreShop.Infrastructure\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.dll
-D:\Github\WebsiteShopping\WebCoreShop.Infrastructure\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.pdb
-D:\Github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.csprojAssemblyReference.cache
-D:\Github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.csproj.CoreCompileInputs.cache
-D:\Github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.AssemblyInfoInputs.cache
-D:\Github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.AssemblyInfo.cs
-D:\Github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.dll
-D:\Github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.pdb
+D:\github\WebsiteShopping\WebCoreShop.Infrastructure\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.deps.json
+D:\github\WebsiteShopping\WebCoreShop.Infrastructure\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.dll
+D:\github\WebsiteShopping\WebCoreShop.Infrastructure\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.pdb
+D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.csproj.CoreCompileInputs.cache
+D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.AssemblyInfoInputs.cache
+D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.AssemblyInfo.cs
+D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.dll
+D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.pdb

@@ -1,9 +1,8 @@
-D:\Github\WebsiteShopping\WebCoreShop.Utilities\bin\Debug\netcoreapp2.0\WebCoreShop.Utilities.deps.json
-D:\Github\WebsiteShopping\WebCoreShop.Utilities\bin\Debug\netcoreapp2.0\WebCoreShop.Utilities.dll
-D:\Github\WebsiteShopping\WebCoreShop.Utilities\bin\Debug\netcoreapp2.0\WebCoreShop.Utilities.pdb
-D:\Github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.csproj.CoreCompileInputs.cache
-D:\Github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.AssemblyInfoInputs.cache
-D:\Github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.AssemblyInfo.cs
-D:\Github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.dll
-D:\Github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.pdb
-D:\github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.csprojAssemblyReference.cache
+D:\github\WebsiteShopping\WebCoreShop.Utilities\bin\Debug\netcoreapp2.0\WebCoreShop.Utilities.deps.json
+D:\github\WebsiteShopping\WebCoreShop.Utilities\bin\Debug\netcoreapp2.0\WebCoreShop.Utilities.dll
+D:\github\WebsiteShopping\WebCoreShop.Utilities\bin\Debug\netcoreapp2.0\WebCoreShop.Utilities.pdb
+D:\github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.csproj.CoreCompileInputs.cache
+D:\github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.AssemblyInfoInputs.cache
+D:\github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.AssemblyInfo.cs
+D:\github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.dll
+D:\github\WebsiteShopping\WebCoreShop.Utilities\obj\Debug\netcoreapp2.0\WebCoreShop.Utilities.pdb

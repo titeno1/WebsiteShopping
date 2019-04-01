@@ -291,8 +291,7 @@ namespace WebCoreShop.Data.EF.Migrations
                         .IsRequired()
                         .HasMaxLength(256);
 
-                    b.Property<Guid>("CustomerId")
-                        .HasMaxLength(450);
+                    b.Property<Guid?>("CustomerId");
 
                     b.Property<string>("CustomerMessage")
                         .IsRequired()
@@ -923,8 +922,7 @@ namespace WebCoreShop.Data.EF.Migrations
                 {
                     b.HasOne("WebCoreShop.Data.Entities.AppUser", "User")
                         .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("CustomerId");
                 });
 
             modelBuilder.Entity("WebCoreShop.Data.Entities.BillDetail", b =>
@@ -1013,7 +1011,7 @@ namespace WebCoreShop.Data.EF.Migrations
             modelBuilder.Entity("WebCoreShop.Data.Entities.ProductTag", b =>
                 {
                     b.HasOne("WebCoreShop.Data.Entities.Product", "Product")
-                        .WithMany()
+                        .WithMany("ProductTags")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade);
 
