@@ -4243,3 +4243,7 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 span.textbox.textbox-invalid.combo {
     width: 30% !important;
 }
+.page-funtion {
+    margin-bottom:10px;
+    padding-left:10px;
+}

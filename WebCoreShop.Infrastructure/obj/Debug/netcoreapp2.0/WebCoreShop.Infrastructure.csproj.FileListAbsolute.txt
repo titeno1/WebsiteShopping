@@ -6,3 +6,4 @@ D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\Web
 D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.AssemblyInfo.cs
 D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.dll
 D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.pdb
+D:\github\WebsiteShopping\WebCoreShop.Infrastructure\obj\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.csprojAssemblyReference.cache

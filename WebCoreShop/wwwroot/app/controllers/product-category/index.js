@@ -16,11 +16,10 @@
         });
 
         $('#btnCreate').off('click').on('click', function () {
-            resetFormMaintainance();
             initTreeDropDownCategory();
             $('#modal-add-edit').modal('show');
         });
-         $('#btnSelectImg').on('click', function () {
+        $('#btnSelectImg').on('click', function () {
             $('#fileInputImage').click();
         });
         $("#fileInputImage").on('change', function () {

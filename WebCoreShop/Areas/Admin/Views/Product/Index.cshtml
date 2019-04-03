@@ -8,6 +8,8 @@
 @section Scripts{
     <script src="~/lib/jquery-easyui-1.7.5/jquery.easyui.min.js"></script>
     <script src="~/app/controllers/product/quantity-management.js"></script>
+    <script src="~/app/controllers/product/image-management.js"></script>
+    <script src="~/app/controllers/product/whole-price-management.js"></script>
     <script src="~/app/controllers/product/index.js"></script>
     <script>
         var product = new productController();
@@ -19,24 +21,30 @@
         <h3>Products <small>List products</small></h3>
     </div>
     <div class="title_right">
-        <div class="col-md-4 col-sm-5 col-xs-12 form-group pull-right">
-            <div class="input-group">
-                <input type="text" id="txtKeyword" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                    <button class="btn btn-primary" id="btnSearch" type="button">Go!</button>
-                </span>
+        <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right">
+                <div class="input-group">
+                    <input type="text" id="txtKeyword" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" id="btnSearch" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12  form-group pull-right">
+                <select class="form-control" id="ddlCategorySearch">
+                    <option>--Select category--</option>
+                </select>
             </div>
         </div>
-        <div class="col-md-3 col-sm-12  form-group pull-right">
-            <select class="form-control" id="ddlCategorySearch">
-                <option>--Select category--</option>
-            </select>
-        </div>
-        <div class="col-md-5 col-sm-12  form-group pull-right">
+    </div>
+</div>
+<div class="page-funtion">
+    <div class="row ">
+        <div class="col-md-12 col-sm-12  form-group title_left">
             <button id="btnCreate" class="btn btn-success">Create</button>
             <a class="btn btn-danger" href="~/templates/ProductImportTemplate.xlsx">Template</a>
-            <button class="btn btn-primary" id="btn-import" type="button"><i class="fa fa-file-excel-o"></i></button>
-            <button class="btn btn-default" id="btn-export" type="button"><i class="fa fa-forward"></i></button>
+            <button class="btn btn-primary" id="btn-import" type="button"><i class="fa fa-file-excel-o"></i> Improt</button>
+            <button class="btn btn-warning" id="btn-export" type="button"><i class="fa fa-forward"></i> Export</button>
         </div>
     </div>
 </div>
@@ -48,13 +56,13 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th width="10%">#</th>
                             <th>Name</th>
                             <th>Category</th>
                             <th>Price</th>
                             <th>Image</th>
                             <th>Created Date</th>
                             <th>Status</th>
+                            <th width="20%">#</th>
                         </tr>
                     </thead>
                     <tbody id="tbl-content"></tbody>
@@ -86,6 +94,12 @@
 </div>
 <script id="table-template" type="x-tmpl-mustache">
     <tr>
+        <td>{{Name}}</td>
+        <td>{{CategoryName}}</td>
+        <td>{{Price}}</td>
+        <td>{{{Image}}}</td>
+        <td>{{CreatedDate}}</td>
+        <td>{{{Status}}}</td>
         <th scope="row">
             <button class="btn btn-default btn-sm btn-edit" data-id="{{Id}}"><i class="fa fa-pencil"></i></button>
             <button class="btn btn-danger btn-sm btn-delete" data-id="{{Id}}"><i class="fa fa-trash"></i></button>
@@ -93,14 +107,10 @@
             <a href="#" data-id="{{Id}}" class="btn btn-xs btn-quantity"><i class="fa fa-hourglass-start"></i></a>
             <a href="#" data-id="{{Id}}" class="btn btn-xs btn-whole-price"><i class="fa fa-money"></i></a>
         </th>
-        <td>{{Name}}</td>
-        <td>{{CategoryName}}</td>
-        <td>{{Price}}</td>
-        <td>{{{Image}}}</td>
-        <td>{{CreatedDate}}</td>
-        <td>{{{Status}}}</td>
     </tr>
 </script>
 @Html.Partial("_AddEditModal.cshtml")
 @Html.Partial("_ImportExcelModal")
 @Html.Partial("_QuantityManagement.cshtml")
+@Html.Partial("_ImageManagement.cshtml")
+@Html.Partial("_WholePriceManagement.cshtml")

@@ -59,7 +59,20 @@ namespace WebCoreShop.Areas.Admin.Controllers
 
             return new OkObjectResult(model);
         }
+        [HttpPost]
+        public IActionResult SaveQuantities(int productId, List<ProductQuantityViewModel> quantities)
+        {
+            _productService.AddQuantity(productId, quantities);
+            _productService.Save();
+            return new OkObjectResult(quantities);
+        }
 
+        [HttpGet]
+        public IActionResult GetQuantities(int productId)
+        {
+            var quantities = _productService.GetQuantities(productId);
+            return new OkObjectResult(quantities);
+        }
         [HttpPost]
         public IActionResult SaveEntity(ProductViewModel productVm)
         {
@@ -83,6 +96,37 @@ namespace WebCoreShop.Areas.Admin.Controllers
                 return new OkObjectResult(productVm);
             }
         }
+        //Image product
+        [HttpPost]
+        public IActionResult SaveImages(int productId, string[] images)
+        {
+            _productService.AddImages(productId, images);
+            _productService.Save();
+            return new OkObjectResult(images);
+        }
+
+        [HttpGet]
+        public IActionResult GetImages(int productId)
+        {
+            var images = _productService.GetImages(productId);
+            return new OkObjectResult(images);
+        }
+        //whole price product
+        [HttpPost]
+        public IActionResult SaveWholePrice(int productId, List<WholePriceViewModel> wholePrices)
+        {
+            _productService.AddWholePrice(productId, wholePrices);
+            _productService.Save();
+            return new OkObjectResult(wholePrices);
+        }
+
+        [HttpGet]
+        public IActionResult GetWholePrices(int productId)
+        {
+            var wholePrices = _productService.GetWholePrices(productId);
+            return new OkObjectResult(wholePrices);
+        }
+        //ImportExcel
         [HttpPost]
         public IActionResult ImportExcel(IList<IFormFile> files, int categoryId)
         {

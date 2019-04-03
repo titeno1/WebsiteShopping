@@ -98,6 +98,9 @@ namespace WebCoreShop
             services.AddTransient<IBillDetailRepository, BillDetailRepository>();
             services.AddTransient<IColorRepository, ColorRepository>();
             services.AddTransient<ISizeRepository, SizeRepository>();
+            services.AddTransient<IProductQuantityRepository, ProductQuantityRepository>();
+            services.AddTransient<IProductImageRepository, ProductImageRepository>();
+            services.AddTransient<IWholePriceRepository, WholePriceRepository>();
 
             //Serrvices
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
@@ -106,6 +109,9 @@ namespace WebCoreShop
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
             services.AddTransient<IBillService, BillService>();
+
+
+
             services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
         }
 
