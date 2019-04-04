@@ -3213,17 +3213,17 @@
           "lib/netstandard1.3/Serilog.dll": {}
         }
       },
-      "Serilog.Extensions.Logging/2.0.0": {
+      "Serilog.Extensions.Logging/1.4.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Logging": "2.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
           "Serilog": "2.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
+          "lib/netstandard1.3/Serilog.Extensions.Logging.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
+          "lib/netstandard1.3/Serilog.Extensions.Logging.dll": {}
         }
       },
       "Serilog.Extensions.Logging.File/1.1.0": {
@@ -9087,10 +9087,10 @@
         "serilog.nuspec"
       ]
     },
-    "Serilog.Extensions.Logging/2.0.0": {
-      "sha512": "JAh1vHmbiwDAjA9VmUQjAXvlGm+vDv8usarajlkx7Arm6Zai+CPY4naE4N9M3Eh520wY5GmIWpM+7zmfMbdTOw==",
+    "Serilog.Extensions.Logging/1.4.0": {
+      "sha512": "nsg2CFYIQsZcNXYajDBNL+Li0EnFibOSLaACcpy+XGyrbmIEhGdLYiMXxadUE10kFfLLLbruZtdbGJ7OOudXlA==",
       "type": "package",
-      "path": "serilog.extensions.logging/2.0.0",
+      "path": "serilog.extensions.logging/1.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9098,13 +9098,9 @@
         "lib/net45/Serilog.Extensions.Logging.xml",
         "lib/net46/Serilog.Extensions.Logging.dll",
         "lib/net46/Serilog.Extensions.Logging.xml",
-        "lib/net461/Serilog.Extensions.Logging.dll",
-        "lib/net461/Serilog.Extensions.Logging.xml",
         "lib/netstandard1.3/Serilog.Extensions.Logging.dll",
         "lib/netstandard1.3/Serilog.Extensions.Logging.xml",
-        "lib/netstandard2.0/Serilog.Extensions.Logging.dll",
-        "lib/netstandard2.0/Serilog.Extensions.Logging.xml",
-        "serilog.extensions.logging.2.0.0.nupkg.sha512",
+        "serilog.extensions.logging.1.4.0.nupkg.sha512",
         "serilog.extensions.logging.nuspec"
       ]
     },
@@ -14315,13 +14311,11 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 3.1.0",
       "EPPlus.Core >= 1.5.4",
       "Microsoft.AspNetCore.All >= 2.0.0",
-      "Microsoft.EntityFrameworkCore >= 2.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.0",
       "Microsoft.Extensions.Logging >= 2.0.0",
       "Microsoft.Extensions.Logging.Abstractions >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.4",
-      "Serilog.Extensions.Logging >= 2.0.0",
       "Serilog.Extensions.Logging.File >= 1.1.0",
       "WebCoreShop.Application >= 1.0.0",
       "WebCoreShop.Data >= 1.0.0",
@@ -14403,10 +14397,6 @@
             "target": "Package",
             "version": "[2.0.0, )"
           },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[2.0.0, )"
-          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers",
             "suppressParent": "All",
@@ -14429,10 +14419,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.0.4, )"
-          },
-          "Serilog.Extensions.Logging": {
-            "target": "Package",
-            "version": "[2.0.0, )"
           },
           "Serilog.Extensions.Logging.File": {
             "target": "Package",

@@ -1,7 +1,3 @@
-D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.csprojAssemblyReference.cache
-D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.csproj.CoreCompileInputs.cache
-D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.AssemblyInfoInputs.cache
-D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.AssemblyInfo.cs
 D:\github\WebsiteShopping\WebCoreShop.Data.EF\bin\Debug\netcoreapp2.0\WebCoreShop.Data.EF.deps.json
 D:\github\WebsiteShopping\WebCoreShop.Data.EF\bin\Debug\netcoreapp2.0\WebCoreShop.Data.EF.dll
 D:\github\WebsiteShopping\WebCoreShop.Data.EF\bin\Debug\netcoreapp2.0\WebCoreShop.Data.EF.pdb
@@ -11,6 +7,10 @@ D:\github\WebsiteShopping\WebCoreShop.Data.EF\bin\Debug\netcoreapp2.0\WebCoreSho
 D:\github\WebsiteShopping\WebCoreShop.Data.EF\bin\Debug\netcoreapp2.0\WebCoreShop.Data.pdb
 D:\github\WebsiteShopping\WebCoreShop.Data.EF\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.pdb
 D:\github\WebsiteShopping\WebCoreShop.Data.EF\bin\Debug\netcoreapp2.0\WebCoreShop.Utilities.pdb
+D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.csprojAssemblyReference.cache
+D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.csproj.CoreCompileInputs.cache
+D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.AssemblyInfoInputs.cache
+D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.AssemblyInfo.cs
 D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.csproj.CopyComplete
 D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.dll
 D:\github\WebsiteShopping\WebCoreShop.Data.EF\obj\Debug\netcoreapp2.0\WebCoreShop.Data.EF.pdb

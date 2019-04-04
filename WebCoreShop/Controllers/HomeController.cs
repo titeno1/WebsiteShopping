@@ -10,7 +10,6 @@ using WebCoreShop.Models;
 
 namespace WebCoreShop.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         public IActionResult Index()
