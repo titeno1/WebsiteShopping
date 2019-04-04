@@ -1,7 +1,3 @@
-D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.csprojAssemblyReference.cache
-D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.csproj.CoreCompileInputs.cache
-D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.AssemblyInfoInputs.cache
-D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.AssemblyInfo.cs
 D:\github\WebsiteShopping\WebCoreShop.Application\bin\Debug\netcoreapp2.0\WebCoreShop.Application.deps.json
 D:\github\WebsiteShopping\WebCoreShop.Application\bin\Debug\netcoreapp2.0\WebCoreShop.Application.dll
 D:\github\WebsiteShopping\WebCoreShop.Application\bin\Debug\netcoreapp2.0\WebCoreShop.Application.pdb
@@ -13,6 +9,10 @@ D:\github\WebsiteShopping\WebCoreShop.Application\bin\Debug\netcoreapp2.0\WebCor
 D:\github\WebsiteShopping\WebCoreShop.Application\bin\Debug\netcoreapp2.0\WebCoreShop.Data.pdb
 D:\github\WebsiteShopping\WebCoreShop.Application\bin\Debug\netcoreapp2.0\WebCoreShop.Utilities.pdb
 D:\github\WebsiteShopping\WebCoreShop.Application\bin\Debug\netcoreapp2.0\WebCoreShop.Infrastructure.pdb
+D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.csprojAssemblyReference.cache
+D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.csproj.CoreCompileInputs.cache
+D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.AssemblyInfoInputs.cache
+D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.AssemblyInfo.cs
 D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.csproj.CopyComplete
 D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.dll
 D:\github\WebsiteShopping\WebCoreShop.Application\obj\Debug\netcoreapp2.0\WebCoreShop.Application.pdb

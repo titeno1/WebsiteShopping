@@ -7439,6 +7439,24 @@
     <None Include="node_modules\twbs-pagination\LICENSE" />
     <None Include="node_modules\twbs-pagination\README.md" />
     <None Include="node_modules\twbs-pagination\tests\test.js" />
+    <None Include="wwwroot\client-side\fonts\font-awesome\fontawesome-webfont.svg" />
+    <None Include="wwwroot\client-side\fonts\font-awesome\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\client-side\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\client-side\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\client-side\fonts\simple-line-icons\Simple-Line-Icons.dev.svg" />
+    <None Include="wwwroot\client-side\fonts\simple-line-icons\Simple-Line-Icons.svg" />
+    <None Include="wwwroot\client-side\js\bootstrap.min.js" />
+    <None Include="wwwroot\client-side\js\cloud-zoom.js" />
+    <None Include="wwwroot\client-side\js\cloudzoom.js" />
+    <None Include="wwwroot\client-side\js\countdown.js" />
+    <None Include="wwwroot\client-side\js\jquery-ui.js" />
+    <None Include="wwwroot\client-side\js\jquery.fancybox.js" />
+    <None Include="wwwroot\client-side\js\jquery.flexslider.js" />
+    <None Include="wwwroot\client-side\js\jquery.min.js" />
+    <None Include="wwwroot\client-side\js\jtv-mobile-menu.js" />
+    <None Include="wwwroot\client-side\js\main.js" />
+    <None Include="wwwroot\client-side\js\owl.carousel.min.js" />
+    <None Include="wwwroot\client-side\js\rev-slider.js" />
     <None Include="wwwroot\lib\animate.css\gulpfile.js" />
     <None Include="wwwroot\lib\animate.css\LICENSE" />
     <None Include="wwwroot\lib\bootbox\.gitignore" />
@@ -11763,7 +11781,6 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.1.0" />
     <PackageReference Include="EPPlus.Core" Version="1.5.4" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
@@ -11771,7 +11788,6 @@
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
-    <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.0" />
     <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
   </ItemGroup>
 
