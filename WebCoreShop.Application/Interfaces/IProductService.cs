@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using WebCoreShop.Application.ViewModels.Common;
 using WebCoreShop.Application.ViewModels.Product;
 using WebCoreShop.Utilities.Dtos;
 
@@ -8,7 +9,8 @@ namespace WebCoreShop.Application.Interfaces
 {
     public interface IProductService : IDisposable
     {
-        List<ProductViewModel>GetAll();
+        List<ProductViewModel> GetAll();
+
         PagedResult<ProductViewModel> GetAllPaging(int? categoryId, string keyword, int page, int pageSize);
 
         ProductViewModel Add(ProductViewModel product);
@@ -21,21 +23,28 @@ namespace WebCoreShop.Application.Interfaces
 
         void ImportExcel(string filePath, int categoryId);
 
+
         void Save();
+
         void AddQuantity(int productId, List<ProductQuantityViewModel> quantities);
 
         List<ProductQuantityViewModel> GetQuantities(int productId);
 
-        //Images product 
         void AddImages(int productId, string[] images);
 
         List<ProductImageViewModel> GetImages(int productId);
-        //whole price product
+
         void AddWholePrice(int productId, List<WholePriceViewModel> wholePrices);
 
         List<WholePriceViewModel> GetWholePrices(int productId);
+
         List<ProductViewModel> GetLastest(int top);
 
         List<ProductViewModel> GetHotProduct(int top);
+        List<ProductViewModel> GetRelatedProducts(int id, int top);
+
+        List<ProductViewModel> GetUpsellProducts(int top);
+
+        List<TagViewModel> GetProductTags(int productId);
     }
 }
