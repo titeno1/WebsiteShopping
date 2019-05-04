@@ -7,6 +7,7 @@ using WebCoreShop.Models.ProductViewModels;
 using WebCoreShop.Application.Interfaces;
 using Microsoft.Extensions.Configuration;
 
+
 namespace WebCoreShop.Controllers
 {
     public class ProductController : Controller
@@ -46,7 +47,15 @@ namespace WebCoreShop.Controllers
         [Route("{alias}-p.{id}.html", Name = "ProductDetail")]
         public IActionResult Details(int id)
         {
-            return View();
+            ViewData["BodyClass"] = "product-page";
+            var model = new DetailViewModel();
+            model.Product = _productService.GetById(id);
+            model.Category = _productCategoryService.GetById(model.Product.CategoryId);
+            model.RelatedProducts = _productService.GetRelatedProducts(id, 9);
+            model.UpsellProducts = _productService.GetUpsellProducts(6);
+            model.ProductImages = _productService.GetImages(id);
+            model.Tags = _productService.GetProductTags(id);
+            return View(model);
         }
 
     }

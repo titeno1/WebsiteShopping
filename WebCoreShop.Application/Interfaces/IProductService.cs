@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using WebCoreShop.Application.ViewModels.Common;
 using WebCoreShop.Application.ViewModels.Product;
 using WebCoreShop.Utilities.Dtos;
 
@@ -37,5 +38,10 @@ namespace WebCoreShop.Application.Interfaces
         List<ProductViewModel> GetLastest(int top);
 
         List<ProductViewModel> GetHotProduct(int top);
+        List<ProductViewModel> GetRelatedProducts(int id, int top);
+
+        List<ProductViewModel> GetUpsellProducts(int top);
+
+        List<TagViewModel> GetProductTags(int productId);
     }
 }

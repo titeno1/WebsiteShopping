@@ -5931,23 +5931,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "C:\\Users\\titeno1\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\WebsiteShopping\\WebCoreShop.Data.EF\\WebCoreShop.Data.EF.csproj",
+      "projectUniqueName": "D:\\github\\WebsiteShopping\\WebCoreShop.Data.EF\\WebCoreShop.Data.EF.csproj",
       "projectName": "WebCoreShop.Data.EF",
-      "projectPath": "D:\\Github\\WebsiteShopping\\WebCoreShop.Data.EF\\WebCoreShop.Data.EF.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\WebsiteShopping\\WebCoreShop.Data.EF\\obj\\",
+      "projectPath": "D:\\github\\WebsiteShopping\\WebCoreShop.Data.EF\\WebCoreShop.Data.EF.csproj",
+      "packagesPath": "C:\\Users\\titeno1\\.nuget\\packages\\",
+      "outputPath": "D:\\github\\WebsiteShopping\\WebCoreShop.Data.EF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\titeno1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5960,14 +5960,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Github\\WebsiteShopping\\WebCoreShop.Data\\WebCoreShop.Data.csproj": {
-              "projectPath": "D:\\Github\\WebsiteShopping\\WebCoreShop.Data\\WebCoreShop.Data.csproj"
+            "D:\\github\\WebsiteShopping\\WebCoreShop.Data\\WebCoreShop.Data.csproj": {
+              "projectPath": "D:\\github\\WebsiteShopping\\WebCoreShop.Data\\WebCoreShop.Data.csproj"
             },
-            "D:\\Github\\WebsiteShopping\\WebCoreShop.Infrastructure\\WebCoreShop.Infrastructure.csproj": {
-              "projectPath": "D:\\Github\\WebsiteShopping\\WebCoreShop.Infrastructure\\WebCoreShop.Infrastructure.csproj"
+            "D:\\github\\WebsiteShopping\\WebCoreShop.Infrastructure\\WebCoreShop.Infrastructure.csproj": {
+              "projectPath": "D:\\github\\WebsiteShopping\\WebCoreShop.Infrastructure\\WebCoreShop.Infrastructure.csproj"
             },
-            "D:\\Github\\WebsiteShopping\\WebCoreShop.Utilities\\WebCoreShop.Utilities.csproj": {
-              "projectPath": "D:\\Github\\WebsiteShopping\\WebCoreShop.Utilities\\WebCoreShop.Utilities.csproj"
+            "D:\\github\\WebsiteShopping\\WebCoreShop.Utilities\\WebCoreShop.Utilities.csproj": {
+              "projectPath": "D:\\github\\WebsiteShopping\\WebCoreShop.Utilities\\WebCoreShop.Utilities.csproj"
             }
           }
         }

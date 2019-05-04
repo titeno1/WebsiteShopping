@@ -21,12 +21,10 @@ using WebCoreShop.Application.Implementation;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using WebCoreShop.Helpers;
-using Microsoft.Extensions.FileProviders;
-using System.IO;
-using Microsoft.AspNetCore.Http;
 using WebCoreShop.Infrastructure.Interfaces;
-using WebCoreShop.Authorization;
 using Microsoft.AspNetCore.Authorization;
+using WebCoreShop.Authorization;
+using PaulMiami.AspNetCore.Mvc.Recaptcha;
 
 namespace WebCoreShop
 {
@@ -67,7 +65,11 @@ namespace WebCoreShop
                 // User settings
                 options.User.RequireUniqueEmail = true;
             });
-
+            services.AddRecaptcha(new RecaptchaOptions()
+            {
+                SiteKey = Configuration["Recaptcha:SiteKey"],
+                SecretKey = Configuration["Recaptcha:SecretKey"]
+            });
             services.AddAutoMapper();
             // Add application services.
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
@@ -101,6 +103,7 @@ namespace WebCoreShop
             services.AddTransient<IProductQuantityRepository, ProductQuantityRepository>();
             services.AddTransient<IProductImageRepository, ProductImageRepository>();
             services.AddTransient<IWholePriceRepository, WholePriceRepository>();
+
             services.AddTransient<IBlogRepository, BlogRepository>();
 
             services.AddTransient<IBlogTagRepository, BlogTagRepository>();
@@ -108,6 +111,7 @@ namespace WebCoreShop
             services.AddTransient<ISystemConfigRepository, SystemConfigRepository>();
 
             services.AddTransient<IFooterRepository, FooterRepository>();
+
 
             //Serrvices
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
@@ -119,15 +123,15 @@ namespace WebCoreShop
             services.AddTransient<IBlogService, BlogService>();
             services.AddTransient<ICommonService, CommonService>();
 
-
-
             services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddFile("Logs/Account-{Date}.txt");
+            loggerFactory.AddFile("Logs/thuong-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -140,17 +144,6 @@ namespace WebCoreShop
             }
 
             app.UseStaticFiles();
-
-            // Add support for node_modules but only during development **temporary**
-            if (env.IsDevelopment())
-            {
-                app.UseStaticFiles(new StaticFileOptions()
-                {
-                    FileProvider = new PhysicalFileProvider(
-                      Path.Combine(Directory.GetCurrentDirectory(), @"node_modules")),
-                    RequestPath = new PathString("/lib")
-                });
-            }
 
             app.UseAuthentication();
 
